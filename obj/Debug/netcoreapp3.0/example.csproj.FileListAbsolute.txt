@@ -1,0 +1,12 @@
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.csprojAssemblyReference.cache
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.csproj.CoreCompileInputs.cache
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.AssemblyInfoInputs.cache
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.AssemblyInfo.cs
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example.deps.json
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example.runtimeconfig.json
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example.runtimeconfig.dev.json
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example.dll
+/Users/nathanmentley/Projects/example/bin/Debug/netcoreapp3.0/example.pdb
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.dll
+/Users/nathanmentley/Projects/example/obj/Debug/netcoreapp3.0/example.pdb
