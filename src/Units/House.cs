@@ -6,7 +6,7 @@ namespace example.Units
 {
     class House: ABuilding, MStorage, MAttackable
     {
-        public House(): base("710 Emmet Ypsilanti Mi 48197") {}
+        public House(): base("addr 1") {}
     }
 }
 

@@ -7,6 +7,6 @@ namespace example.Units
 {
     class GasStation: ABuilding, MFuelable, MFueler, MStorage, MAttackable
     {
-        public GasStation(): base("923 W Cross Ypsilanti Mi 48197") {}
+        public GasStation(): base("addr 2") {}
     }
 }
