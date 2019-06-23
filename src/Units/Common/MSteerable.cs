@@ -26,16 +26,10 @@ namespace example.Units.Common
             }
         }
         public static Int32 GetSteeringPosition(this MSteerable thing) {
-            if (thing._compositionData.ContainsKey(MSteerableEx.DIRECTION)) {
-                if(thing._compositionData[MSteerableEx.DIRECTION] is Int32 ret) {
-                    return ret;
-                }
-            }
-
-            return 0;
+            return thing.GetField<Int32>(MSteerableEx.DIRECTION);
         }
         public static void SetSteeringPosition(this MSteerable thing, Int32 value) {
-            thing._compositionData[MSteerableEx.DIRECTION] = value;
+            thing.SetField(MSteerableEx.DIRECTION, value);
         }
     }
 }

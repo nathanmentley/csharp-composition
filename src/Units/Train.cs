@@ -5,7 +5,7 @@ using example.Units.Common;
 
 namespace example.Units
 {
-    class Train: ATransport, MFuelable, MMovable, MStorage
+    class Train: ATransport, MFuelable, MMovable, MStorage, MAttackable
     {
         public Train(): base("train") {}
     }

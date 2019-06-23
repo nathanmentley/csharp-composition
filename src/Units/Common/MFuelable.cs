@@ -5,13 +5,12 @@ using example.Core;
 namespace example.Units.Common
 {
     public interface MFuelable: IComposable {}
-
     static public class MFuelableEx {
         private const String TANK_VALUE = "MFuelable_tank_value";
 
         //private setter
         private static void SetTank(this MFuelable thing, UInt32 value) {
-            thing._compositionData[MFuelableEx.TANK_VALUE] = value;
+            thing.SetField(MFuelableEx.TANK_VALUE, value);
         }
 
         //increment tank by 1.
@@ -41,13 +40,7 @@ namespace example.Units.Common
 
         //get tank value
         public static UInt32 GetTankValue(this MFuelable thing) {
-            if (thing._compositionData.ContainsKey(MFuelableEx.TANK_VALUE)) {
-                if(thing._compositionData[MFuelableEx.TANK_VALUE] is UInt32 ret) {
-                    return ret;
-                }
-            }
-
-            return 0;
+            return thing.GetField<UInt32>(MFuelableEx.TANK_VALUE);
         }
         //check if tank is full
         public static Boolean IsTankFull(this MFuelable thing) {
