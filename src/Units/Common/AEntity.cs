@@ -5,7 +5,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public abstract class AEntity: ExampleObject {
+    public abstract class AEntity: ComposableObject {
         protected AEntity(): base() {}
     }
 }
