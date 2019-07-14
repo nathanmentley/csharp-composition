@@ -10,11 +10,6 @@ namespace example
     {
         static void Main(string[] args)
         {
-            Other();
-            System.GC.Collect();
-        }
-
-        static void Other() {
             //setup our entities.
             // Everything but the refinery starts empty. The refinery is seeded with 1 million units.
             Refinery refinery = new Refinery(1_000_000);
