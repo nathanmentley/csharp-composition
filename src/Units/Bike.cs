@@ -5,7 +5,7 @@ using example.Units.Common;
 
 namespace example.Units
 {
-    class Bike: ATransport, MSteerable, MMovable, MAttackable
+    class Bike: ATransport, MSteerable, MMovable, MAttackable, MAttacker
     {
         public Bike(): base("bike") {}
     }

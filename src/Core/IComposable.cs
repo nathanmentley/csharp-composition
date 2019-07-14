@@ -3,7 +3,12 @@ using System;
 namespace example.Core
 {
     public interface IComposable {
-        ValueType GetField<ValueType>(String key);
-        void SetField<ValueType>(String key, ValueType value);
+        protected ValueType GetField<ValueType>(String key) {
+            return ComposableObjectData.GetField<ValueType>(this, key);
+        }
+
+        protected void SetField<ValueType>(String key, ValueType value) {
+            ComposableObjectData.SetField(this, key, value);
+        }
     }
 }

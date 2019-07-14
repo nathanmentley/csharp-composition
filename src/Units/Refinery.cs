@@ -8,7 +8,7 @@ namespace example.Units
     class Refinery: ABuilding, MFuelable, MFueler, MStorage, MAttackable
     {
         public Refinery(UInt32 initalTankValue): base("addr 3") {
-            this.InitTank(initalTankValue);
+            this.AsComp<MFuelable>().InitTank(initalTankValue);
         }
     }
 }
