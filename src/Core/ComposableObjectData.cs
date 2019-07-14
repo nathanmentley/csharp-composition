@@ -12,10 +12,11 @@ namespace example.Core
             _compositionData = new ConditionalWeakTable<object, Dictionary<Type, Dictionary<String, object>>>();
         }
 
-        static internal ValueType GetField<ValueType>(object obj, string key) {
+        static internal ValueType GetField<ValueType>(object obj) {
             StackFrame frame = new StackFrame(2);
             var method = frame.GetMethod();
             var type = method.DeclaringType;
+            var key = $"{type.Name}_{method.Name.Substring(3)}";
 
             Dictionary<Type, Dictionary<String, object>> compData;
             bool found = _compositionData.TryGetValue(obj, out compData);
@@ -38,10 +39,11 @@ namespace example.Core
             return default(ValueType);
         }
 
-        static internal void SetField<ValueType>(object obj, string key, ValueType value) {
+        static internal void SetField<ValueType>(object obj, ValueType value) {
             StackFrame frame = new StackFrame(2);
             var method = frame.GetMethod();
             var type = method.DeclaringType;
+            var key = $"{type.Name}_{method.Name.Substring(3)}";
             
             Dictionary<Type, Dictionary<String, object>> compData;
             bool found = _compositionData.TryGetValue(obj, out compData);

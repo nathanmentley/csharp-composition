@@ -8,14 +8,8 @@ namespace example.Units.Common
     {
         private UInt32 _health
         {
-            get
-            {
-                return GetField<UInt32>("MAttackable_health");
-            }
-            set
-            {
-                SetField("MAttackable_health", value);
-            }
+            get => GetField<UInt32>();
+            set => SetField(value);
         }
 
         internal Boolean IncrementHealth()

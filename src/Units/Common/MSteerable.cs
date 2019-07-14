@@ -8,29 +8,23 @@ namespace example.Units.Common
     {
         private Int32 _steeringPosition
         {
-            get
-            {
-                return GetField<Int32>("MSteerable_direction");
-            }
-            set
-            {
-                SetField("MSteerable_direction", value);
-            }
+            get => GetField<Int32>();
+            set => SetField(value);
         }
 
-        private Boolean IsFullyLeft()
+        private Boolean IsTurningFullyLeft()
         {
             return _steeringPosition == Int32.MinValue;
         }
 
-        private Boolean IsFullyRight()
+        private Boolean IsTurningFullyRight()
         {
             return _steeringPosition == Int32.MaxValue;
         }
 
         public void TurnLeft()
         {
-            if(!IsFullyLeft())
+            if(!IsTurningFullyLeft())
             {
                 _steeringPosition--;
             }
@@ -38,7 +32,7 @@ namespace example.Units.Common
 
         public void TurnRight()
         {
-            if(!IsFullyRight())
+            if(!IsTurningFullyRight())
             {
                 _steeringPosition++;
             }

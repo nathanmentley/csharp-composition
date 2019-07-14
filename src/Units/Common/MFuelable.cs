@@ -8,14 +8,8 @@ namespace example.Units.Common
     {
         private UInt32 _tank
         {
-            get
-            {
-                return GetField<UInt32>("MFuelable_tank_value");
-            }
-            set
-            {
-                SetField("MFuelable_tank_value", value);
-            }
+            get => GetField<UInt32>();
+            set => SetField(value);
         }
 
         //setup initial tank value.
