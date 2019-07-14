@@ -4,7 +4,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MSteerable: IComposable
+    public interface MSteerable: MComposable
     {
         private Int32 _steeringPosition
         {

@@ -4,7 +4,8 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MFuelable: IComposable {
+    public interface MFuelable: MComposable
+    {
         private UInt32 _tank
         {
             get

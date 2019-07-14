@@ -4,7 +4,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MFueler: MFuelable, IComposable
+    public interface MFueler: MFuelable, MComposable
     {
         public void Fuel(MFuelable fuelableEntity, UInt32 amount = 20)
         {

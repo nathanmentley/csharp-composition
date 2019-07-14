@@ -4,7 +4,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MHealer: IComposable
+    public interface MHealer: MComposable
     {
         public void Heal(MAttackable target)
         {

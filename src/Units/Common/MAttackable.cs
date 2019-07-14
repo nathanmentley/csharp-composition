@@ -4,7 +4,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MAttackable: IComposable
+    public interface MAttackable: MComposable
     {
         private UInt32 _health
         {

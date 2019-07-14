@@ -2,7 +2,7 @@ using System;
 
 namespace example.Core
 {
-    public interface IComposable {
+    public interface MComposable {
         protected ValueType GetField<ValueType>(String key) {
             return ComposableObjectData.GetField<ValueType>(this, key);
         }

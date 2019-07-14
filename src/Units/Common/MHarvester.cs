@@ -4,7 +4,7 @@ using example.Core;
 
 namespace example.Units.Common
 {
-    public interface MHarvester: IComposable
+    public interface MHarvester: MComposable
     {
     }
 }
